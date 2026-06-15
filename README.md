@@ -10,7 +10,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=4CAF50)](https://github.com/XyLuoDYS?tab=followers)
 [![GitHub stars](https://img.shields.io/github/stars/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=8B5CF6)](https://github.com/XyLuoDYS?tab=repositories)
 [![爱发电](https://img.shields.io/badge/爱发电-支持我-5A62D3?style=for-the-badge&labelColor=0D1117&logo=afdian&logoColor=5A62D3)](https://afdian.com/a/xyluodys)
-[![bilibili](https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=412950014)](https://space.bilibili.com/1021878853)
+[![bilibili](https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1021878853)](https://space.bilibili.com/1021878853)
 
 </div>
 
