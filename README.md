@@ -7,10 +7,26 @@
 </a>
 
 
-[![GitHub followers](https://img.shields.io/github/followers/XyLuoDYS?style=for-the-badge&logo=github&labelColor=transparent&color=4CAF50)](https://github.com/XyLuoDYS?tab=followers)
-[![GitHub stars](https://img.shields.io/github/stars/XyLuoDYS?style=for-the-badge&logo=github&labelColor=transparent&color=8B5CF6)](https://github.com/XyLuoDYS?tab=repositories)
-[![爱发电](https://img.shields.io/badge/爱发电-支持我-5A62D3?style=for-the-badge&labelColor=transparent&logo=afdian&logoColor=5A62D3)](https://afdian.com/a/xyluodys)
-[![bilibili](https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1021878853)](https://space.bilibili.com/1021878853)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/followers/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=4CAF50">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/followers/XyLuoDYS?style=for-the-badge&logo=github&labelColor=eaeaea&color=4CAF50">
+  <img src="https://img.shields.io/github/followers/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=4CAF50" alt="GitHub followers">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=8B5CF6">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/XyLuoDYS?style=for-the-badge&logo=github&labelColor=eaeaea&color=8B5CF6">
+  <img src="https://img.shields.io/github/stars/XyLuoDYS?style=for-the-badge&logo=github&labelColor=0D1117&color=8B5CF6" alt="GitHub stars">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/爱发电-支持我-5A62D3?style=for-the-badge&labelColor=0D1117&logo=afdian&logoColor=5A62D3">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/爱发电-支持我-5A62D3?style=for-the-badge&labelColor=eaeaea&logo=afdian&logoColor=5A62D3">
+  <img src="https://img.shields.io/badge/爱发电-支持我-5A62D3?style=for-the-badge&labelColor=0D1117&logo=afdian&logoColor=5A62D3" alt="爱发电">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1021878853">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1021878853">
+  <img src="https://img.shields.io/badge/dynamic/json?label=bilibili&color=00A1D6&labelColor=FB7299&style=for-the-badge&logo=bilibili&logoColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1021878853" alt="bilibili">
+</picture>
 
 </div>
 
@@ -23,14 +39,38 @@
 <table>
   <tr>
     <td width="50%">
-      <img src="https://img.shields.io/badge/🔭%20在做什么-开发%20MCJE%20插件-transparent?style=flat-square&labelColor=transparent&color=4CAF50" /><br/>
-      <img src="https://img.shields.io/badge/🌱%20在学什么-TabooLib%20%2F%20Astro%20%2F%20Kotlin-transparent?style=flat-square&labelColor=transparent&color=2196F3" /><br/>
-      <img src="https://img.shields.io/badge/👯%20想做什么-寻找开源合作机会-transparent?style=flat-square&labelColor=transparent&color=8B5CF6" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🔭%20在做什么-开发%20MCJE%20插件-0D1117?style=flat-square&labelColor=0D1117&color=4CAF50">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/🔭%20在做什么-开发%20MCJE%20插件-eaeaea?style=flat-square&labelColor=eaeaea&color=4CAF50">
+        <img src="https://img.shields.io/badge/🔭%20在做什么-开发%20MCJE%20插件-0D1117?style=flat-square&labelColor=0D1117&color=4CAF50" alt="🔭 在做什么">
+      </picture><br/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🌱%20在学什么-TabooLib%20%2F%20Astro%20%2F%20Kotlin-0D1117?style=flat-square&labelColor=0D1117&color=2196F3">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/🌱%20在学什么-TabooLib%20%2F%20Astro%20%2F%20Kotlin-eaeaea?style=flat-square&labelColor=eaeaea&color=2196F3">
+        <img src="https://img.shields.io/badge/🌱%20在学什么-TabooLib%20%2F%20Astro%20%2F%20Kotlin-0D1117?style=flat-square&labelColor=0D1117&color=2196F3" alt="🌱 在学什么">
+      </picture><br/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/👯%20想做什么-寻找开源合作机会-0D1117?style=flat-square&labelColor=0D1117&color=8B5CF6">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/👯%20想做什么-寻找开源合作机会-eaeaea?style=flat-square&labelColor=eaeaea&color=8B5CF6">
+        <img src="https://img.shields.io/badge/👯%20想做什么-寻找开源合作机会-0D1117?style=flat-square&labelColor=0D1117&color=8B5CF6" alt="👯 想做什么">
+      </picture>
     </td>
     <td width="50%">
-      <img src="https://img.shields.io/badge/💬%20擅长领域-MC插件开发-transparent?style=flat-square&labelColor=transparent&color=4CAF50" /><br/>
-      <img src="https://img.shields.io/badge/📫%20联系方式-QQ%203854525223-transparent?style=flat-square&labelColor=transparent&color=2196F3" /><br/>
-      <img src="https://img.shields.io/badge/⚡%20有趣事实-写过超过%2010%20行插件代码-transparent?style=flat-square&labelColor=transparent&color=8B5CF6" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/💬%20擅长领域-MC插件开发-0D1117?style=flat-square&labelColor=0D1117&color=4CAF50">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/💬%20擅长领域-MC插件开发-eaeaea?style=flat-square&labelColor=eaeaea&color=4CAF50">
+        <img src="https://img.shields.io/badge/💬%20擅长领域-MC插件开发-0D1117?style=flat-square&labelColor=0D1117&color=4CAF50" alt="💬 擅长领域">
+      </picture><br/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/📫%20联系方式-QQ%203854525223-0D1117?style=flat-square&labelColor=0D1117&color=2196F3">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/📫%20联系方式-QQ%203854525223-eaeaea?style=flat-square&labelColor=eaeaea&color=2196F3">
+        <img src="https://img.shields.io/badge/📫%20联系方式-QQ%203854525223-0D1117?style=flat-square&labelColor=0D1117&color=2196F3" alt="📫 联系方式">
+      </picture><br/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/⚡%20有趣事实-写过超过%2010%20行插件代码-0D1117?style=flat-square&labelColor=0D1117&color=8B5CF6">
+        <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/⚡%20有趣事实-写过超过%2010%20行插件代码-eaeaea?style=flat-square&labelColor=eaeaea&color=8B5CF6">
+        <img src="https://img.shields.io/badge/⚡%20有趣事实-写过超过%2010%20行插件代码-0D1117?style=flat-square&labelColor=0D1117&color=8B5CF6" alt="⚡ 有趣事实">
+      </picture>
     </td>
   </tr>
 </table>
@@ -43,13 +83,21 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=java,kotlin,python,html,js,css&theme=dark&perline=6" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,kotlin,python,html,js,css&theme=dark&perline=6">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=java,kotlin,python,html,js,css&theme=light&perline=6">
+  <img src="https://skillicons.dev/icons?i=java,kotlin,python,html,js,css&theme=dark&perline=6" alt="Languages">
+</picture>
 
 <br/>
 
 **Tools & Platforms**
 
-<img src="https://skillicons.dev/icons?i=git,github,nginx,idea,ae,ai&theme=dark&perline=6" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,nginx,idea,ae,ai&theme=dark&perline=6">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,github,nginx,idea,ae,ai&theme=light&perline=6">
+  <img src="https://skillicons.dev/icons?i=git,github,nginx,idea,ae,ai&theme=dark&perline=6" alt="Tools & Platforms">
+</picture>
 
 </div>
 
@@ -62,20 +110,36 @@
 <table>
   <tr>
     <td width="50%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=XyLuoDYS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=transparent&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=XyLuoDYS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=XyLuoDYS&show_icons=true&theme=buefy&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=4CAF50&icon_color=8B5CF6&text_color=333333">
+        <img width="100%" src="https://github-readme-stats.vercel.app/api?username=XyLuoDYS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9" alt="GitHub Stats">
+      </picture>
     </td>
     <td width="50%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XyLuoDYS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=transparent&title_color=4CAF50&text_color=c9d1d9" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=XyLuoDYS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4CAF50&text_color=c9d1d9">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=XyLuoDYS&layout=compact&langs_count=8&theme=buefy&hide_border=true&bg_color=ffffff&title_color=4CAF50&text_color=333333">
+        <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XyLuoDYS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4CAF50&text_color=c9d1d9" alt="Top Languages">
+      </picture>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <img width="100%" src="https://streak-stats.demolab.com?user=XyLuoDYS&theme=tokyonight&hide_border=true&background=transparent&stroke=4CAF50&ring=8B5CF6&fire=F97316&currStreakLabel=4CAF50&sideLabels=4CAF50" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=XyLuoDYS&theme=tokyonight&hide_border=true&background=0D1117&stroke=4CAF50&ring=8B5CF6&fire=F97316&currStreakLabel=4CAF50&sideLabels=4CAF50">
+        <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=XyLuoDYS&theme=default&hide_border=true&background=ffffff&stroke=4CAF50&ring=8B5CF6&fire=F97316&currStreakLabel=4CAF50&sideLabels=4CAF50">
+        <img width="100%" src="https://streak-stats.demolab.com?user=XyLuoDYS&theme=tokyonight&hide_border=true&background=0D1117&stroke=4CAF50&ring=8B5CF6&fire=F97316&currStreakLabel=4CAF50&sideLabels=4CAF50" alt="GitHub Streak">
+      </picture>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&theme=tokyo-night&hide_border=true&bg_color=transparent&color=4CAF50&line=8B5CF6&point=ffffff&area=true&area_color=4CAF5030" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=4CAF50&line=8B5CF6&point=ffffff&area=true&area_color=4CAF5030">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&theme=github-light&hide_border=true&bg_color=ffffff&color=4CAF50&line=8B5CF6&point=333333&area=true&area_color=4CAF5030">
+        <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=4CAF50&line=8B5CF6&point=ffffff&area=true&area_color=4CAF5030" alt="Activity Graph">
+      </picture>
     </td>
   </tr>
 </table>
@@ -89,7 +153,11 @@
 <div align="center">
 
 <a href="https://github.com/XyLuoDYS/XPListGUI">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=XyLuoDYS&repo=XPListGUI&theme=tokyonight&hide_border=true&bg_color=transparent&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=XyLuoDYS&repo=XPListGUI&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=XyLuoDYS&repo=XPListGUI&theme=buefy&hide_border=true&bg_color=ffffff&title_color=4CAF50&icon_color=8B5CF6&text_color=333333">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=XyLuoDYS&repo=XPListGUI&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4CAF50&icon_color=8B5CF6&text_color=c9d1d9" alt="XPListGUI">
+  </picture>
 </a>
 
 </div>
@@ -113,17 +181,23 @@
 
 <div align="center">
 
-<a href="https://qm.qq.com/q/pjsYalTn1e">
-  <img src="https://img.shields.io/badge/QQ%20交流群-12B7F5?style=for-the-badge&logo=qq&logoColor=white&labelColor=transparent" />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/QQ%20交流群-12B7F5?style=for-the-badge&logo=qq&logoColor=white&labelColor=0D1117">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/QQ%20交流群-12B7F5?style=for-the-badge&logo=qq&logoColor=white&labelColor=eaeaea">
+  <img src="https://img.shields.io/badge/QQ%20交流群-12B7F5?style=for-the-badge&logo=qq&logoColor=white&labelColor=0D1117" alt="QQ 交流群">
+</picture>
 &nbsp;
-<a href="https://space.bilibili.com/1021878853">
-  <img src="https://img.shields.io/badge/bilibili-FB7299?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=transparent" />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/bilibili-FB7299?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=0D1117">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/bilibili-FB7299?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=eaeaea">
+  <img src="https://img.shields.io/badge/bilibili-FB7299?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=0D1117" alt="bilibili">
+</picture>
 &nbsp;
-<a href="https://afdian.com/a/xyluodys">
-  <img src="https://img.shields.io/badge/爱发电-5A62D3?style=for-the-badge&logo=afdian&logoColor=white&labelColor=transparent" />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/爱发电-5A62D3?style=for-the-badge&logo=afdian&logoColor=white&labelColor=0D1117">
+  <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/爱发电-5A62D3?style=for-the-badge&logo=afdian&logoColor=white&labelColor=eaeaea">
+  <img src="https://img.shields.io/badge/爱发电-5A62D3?style=for-the-badge&logo=afdian&logoColor=white&labelColor=0D1117" alt="爱发电">
+</picture>
 
 </div>
 
@@ -131,7 +205,11 @@
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight">
+  <source media="(prefers-color-scheme: light)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=default">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Quote">
+</picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,50:2196F3,100:4CAF50&height=130&section=footer&text=Thanks%20for%20visiting!&fontSize=20&fontColor=ffffff&animation=fadeIn&fontAlignY=65" width="100%"/>
 
