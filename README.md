@@ -49,7 +49,7 @@
 
 **Tools & Platforms**
 
-<img src="https://skillicons.dev/icons?i=git,github,nginx,idea,ae,ai&theme=dark&perline=6" />
+<img src="https://skillicons.dev/icons?i=git,github,nginx,nodejs,idea,vscode&theme=dark&perline=6" />
 
 </div>
 
