@@ -14,7 +14,6 @@ STAR_COLORS = ['#FFD700','#8B5CF6','#58A6FF','#F97316','#ff6eb4','#00e5ff']
 
 random.seed(42)
 
-# ── simulation ───────────────────────────────────────────────────────────────
 def find_dir(head, direction, snake_set, star_positions):
     dx, dy = direction
     best, best_dist = None, 1e9
@@ -49,7 +48,6 @@ while len(eat_events) < TOTAL_EATS:
     direction = find_dir(snake[0], direction, snake_set, list(stars.keys()))
     nx=(snake[0][0]+direction[0])%COLS; ny=(snake[0][1]+direction[1])%ROWS
     snake.insert(0,(nx,ny))
-
     eat_pos = eat_color = None
     if (nx,ny) in stars:
         eat_color = stars.pop((nx,ny))
@@ -59,18 +57,21 @@ while len(eat_events) < TOTAL_EATS:
         if p: stars[p] = c
     else:
         snake.pop()
-
     frames.append((list(snake), dict(stars), eat_pos, eat_color))
     step += 1
 
 TOTAL_STEPS = len(frames)
 TOTAL_TIME = round(TOTAL_STEPS * STEP_DUR, 2)
 
-def kt(i):
-    if TOTAL_STEPS <= 1: return "0%"
-    return f"{round(i/(TOTAL_STEPS-1)*100,4)}%"
+# keyTimes: 0%, ..., 100%  (SMIL requires first=0, last=1 when repeatCount set)
+def make_kt():
+    if TOTAL_STEPS == 1:
+        return "0;1"
+    return ";".join(f"{i/(TOTAL_STEPS-1):.6f}" for i in range(TOTAL_STEPS))
 
-# ── star lifetime tracking ───────────────────────────────────────────────────
+KT = make_kt()
+
+# star lifetime
 star_spans = []
 tracked = {}
 for fi, (_, stars_f, _, _) in enumerate(frames):
@@ -86,55 +87,53 @@ for pos, (a, c) in tracked.items():
 out = []
 out.append(f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">')
 out.append(f'<rect width="{W}" height="{H}" fill="#0d1117" rx="8"/>')
-# grid
-out.append(f'<defs><pattern id="gr" width="{SZ}" height="{SZ}" patternUnits="userSpaceOnUse">'
-           f'<path d="M{SZ} 0L0 0 0 {SZ}" fill="none" stroke="#ffffff" stroke-width="0.3"/>'
-           f'</pattern></defs>')
-out.append(f'<rect width="{W}" height="{H}" fill="url(#gr)" opacity="0.06" rx="8"/>')
+out.append(
+    f'<defs><pattern id="gr" width="{SZ}" height="{SZ}" patternUnits="userSpaceOnUse">'
+    f'<path d="M{SZ} 0L0 0 0 {SZ}" fill="none" stroke="#ffffff" stroke-width="0.3"/>'
+    f'</pattern></defs>'
+    f'<rect width="{W}" height="{H}" fill="url(#gr)" opacity="0.06" rx="8"/>'
+)
 
-KT = ";".join(kt(i) for i in range(TOTAL_STEPS))
-
-# ── snake: each segment uses x/y animate, visibility via display ─────────────
+# ── snake segments ────────────────────────────────────────────────────────────
+# Strategy: animate cx/cy on a <rect> via x/y.
+# For visibility use opacity 0/1 with calcMode=discrete (more reliable than display/visibility in GitHub)
 MAX_SEG = SNAKE_INIT + TOTAL_EATS
 for seg_idx in range(MAX_SEG):
     color = GREEN[min(seg_idx, len(GREEN)-1)]
-    xs, ys, vis = [], [], []
+    xs, ys, ops = [], [], []
     last_x, last_y = 0, 0
     for fi, (snake_f, _, _, _) in enumerate(frames):
         if seg_idx < len(snake_f):
             sx, sy = snake_f[seg_idx]
             last_x, last_y = sx*SZ+1, sy*SZ+1
-            xs.append(last_x); ys.append(last_y); vis.append("inline")
+            xs.append(str(last_x)); ys.append(str(last_y)); ops.append("1")
         else:
-            xs.append(last_x); ys.append(last_y); vis.append("none")
+            xs.append(str(last_x)); ys.append(str(last_y)); ops.append("0")
 
     out.append(
-        f'<rect width="{SZ-2}" height="{SZ-2}" fill="{color}" rx="2" x="{xs[0]}" y="{ys[0]}">'
-        f'<animate attributeName="x" values="{";".join(map(str,xs))}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
-        f'<animate attributeName="y" values="{";".join(map(str,ys))}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
-        f'<animate attributeName="display" values="{";".join(vis)}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
+        f'<rect width="{SZ-2}" height="{SZ-2}" fill="{color}" rx="2">'
+        f'<animate attributeName="x" values="{";".join(xs)}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
+        f'<animate attributeName="y" values="{";".join(ys)}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
+        f'<animate attributeName="opacity" values="{";".join(ops)}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
         f'</rect>'
     )
 
-# ── stars: 每颗星用独立 rect + text，visibility 用 display，闪烁用独立 opacity ──
+# ── stars ─────────────────────────────────────────────────────────────────────
+# Each star: fixed position, opacity animates 0→twinkle during its lifespan
 for pos, color, a, d in star_spans:
     x, y = pos[0]*SZ+2, pos[1]*SZ+2
-    # display keyframes: only show during [a, d)
-    disp = ["inline" if a <= fi < d else "none" for fi in range(TOTAL_STEPS)]
-    KD = ";".join(disp)
-    twinkle_dur = round(1.1 + random.random()*0.9, 2)
-    # rect
+    ops = []
+    for fi in range(TOTAL_STEPS):
+        if a <= fi < d:
+            # twinkle: oscillate between 0.4 and 1.0
+            phase = (fi - a) / max(d - a, 1)
+            v = round(0.7 + 0.3 * math.sin(phase * math.pi * 6), 3)
+            ops.append(str(v))
+        else:
+            ops.append("0")
     out.append(
-        f'<rect x="{x}" y="{y}" width="{SZ-5}" height="{SZ-5}" fill="{color}" rx="2" display="none">'
-        f'<animate attributeName="display" values="{KD}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
-        f'<animate attributeName="opacity" values="1;0.3;1" dur="{twinkle_dur}s" repeatCount="indefinite"/>'
-        f'</rect>'
-    )
-    # star glyph
-    out.append(
-        f'<text x="{x-1}" y="{y+SZ-5}" font-size="12" font-family="monospace" fill="{color}" display="none">'
-        f'<animate attributeName="display" values="{KD}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="discrete"/>'
-        f'<animate attributeName="opacity" values="0.9;0.2;0.9" dur="{twinkle_dur}s" repeatCount="indefinite"/>'
+        f'<text x="{x}" y="{y+SZ-4}" font-size="13" font-family="monospace" fill="{color}">'
+        f'<animate attributeName="opacity" values="{";".join(ops)}" keyTimes="{KT}" dur="{TOTAL_TIME}s" repeatCount="indefinite" calcMode="linear"/>'
         f'★</text>'
     )
 
@@ -142,16 +141,16 @@ for pos, color, a, d in star_spans:
 for eat_step, eat_pos, eat_color in eat_events:
     ex, ey = eat_pos[0]*SZ+SZ//2, eat_pos[1]*SZ+SZ//2
     ts = round(eat_step * STEP_DUR, 3)
-    dur = 0.4
+    dur = 0.35
     for i in range(8):
         angle = i * math.pi / 4
-        ex2 = round(ex + math.cos(angle)*24, 1)
-        ey2 = round(ey + math.sin(angle)*24, 1)
+        ex2 = round(ex + math.cos(angle)*22, 1)
+        ey2 = round(ey + math.sin(angle)*22, 1)
         out.append(
             f'<circle r="2.5" fill="{eat_color}" cx="{ex}" cy="{ey}" opacity="0">'
             f'<animate attributeName="cx" values="{ex};{ex2}" begin="{ts}s" dur="{dur}s" fill="remove" calcMode="linear"/>'
             f'<animate attributeName="cy" values="{ey};{ey2}" begin="{ts}s" dur="{dur}s" fill="remove" calcMode="linear"/>'
-            f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.5;1" begin="{ts}s" dur="{dur}s" fill="remove"/>'
+            f'<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3;1" begin="{ts}s" dur="{dur}s" fill="remove"/>'
             f'</circle>'
         )
 
