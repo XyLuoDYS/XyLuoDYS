@@ -130,8 +130,8 @@
 <br/>
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/XyLuoDYS/XyLuoDYS/output/github-contribution-grid-snake-dark.svg" />
+  
+<img src="https://raw.githubusercontent.com/XyLuoDYS/XyLuoDYS/output/pixel-snake.svg" width="100%"/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,50:2196F3,100:4CAF50&height=130&section=footer&text=Thanks%20for%20visiting!&fontSize=20&fontColor=ffffff&animation=fadeIn&fontAlignY=65" width="100%"/>
 
