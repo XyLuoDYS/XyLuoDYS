@@ -163,6 +163,6 @@ out.append(f'<text x="{W-78}" y="{H-6}" font-size="10" font-family="monospace" f
 out.append('</svg>')
 
 svg = "\n".join(out)
-with open('/home/claude/pixel-snake.svg','w') as f:
+with open('dist/pixel-snake.svg','w') as f:
     f.write(svg)
 print(f"Done! steps={TOTAL_STEPS} time={TOTAL_TIME}s size={len(svg)//1024}KB")
