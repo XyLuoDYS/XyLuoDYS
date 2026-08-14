@@ -20,7 +20,7 @@
 
 > *"代码是诗，架构是哲学，产品是艺术。"*
 
-<table>
+<table align="center">
   <tr>
     <td width="50%">
       <img src="https://img.shields.io/badge/🔭%20在做什么-开发%20MCJE%20插件-4CAF50?labelColor=rgba(60%2C60%2C60%2C0.55)&style=flat-square" /><br/>
@@ -34,7 +34,7 @@
     </td>
   </tr>
 </table>
-
+  
 ---
 
 ## 🛠️ Tech Stack
@@ -84,17 +84,6 @@
 
 ---
 
-## 🔥 Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/XyLuoDYS/XPListGUI">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=XyLuoDYS&repo=XPListGUI&theme=transparent&border_color=3C3C3C80&title_color=4CAF50&icon_color=8B5CF6&text_color=58A6FF" />
-</a>
-
-</div>
-
-
 ## 🎯 2026 Goals
 
 <div align="center">
@@ -113,7 +102,7 @@
 
 <div align="center">
 
-<a href="https://qm.qq.com/q/pjsYalTn1e">
+<a href="https://qm.qq.com/q/xWFUYkNX0s">
   <img src="https://img.shields.io/badge/QQ%20交流群-12B7F5?style=for-the-badge&logo=qq&logoColor=white" />
 </a>
 &nbsp;
