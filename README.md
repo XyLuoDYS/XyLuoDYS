@@ -59,26 +59,7 @@
 
 <div align="center">
 
-<table>
-  <tr>
-    <td width="50%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=XyLuoDYS&show_icons=true&theme=transparent&hide_border=true&title_color=4CAF50&icon_color=8B5CF6&text_color=58A6FF" />
-    </td>
-    <td width="50%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XyLuoDYS&layout=compact&langs_count=8&theme=transparent&hide_border=true&title_color=4CAF50&text_color=58A6FF" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <img width="100%" src="https://streak-stats.demolab.com?user=XyLuoDYS&theme=transparent&hide_border=true&background=00000000&stroke=4CAF50&ring=8B5CF6&fire=F97316&currStreakLabel=4CAF50&sideLabels=58A6FF&dates=58A6FF&currStreakNum=4CAF50&sideNums=58A6FF" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&hide_border=true&bg_color=00000000&color=4CAF50&line=8B5CF6&point=4CAF50&area=true" />
-    </td>
-  </tr>
-</table>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=XyLuoDYS&hide_border=true&bg_color=00000000&color=4CAF50&line=8B5CF6&point=4CAF50&area=true" />
 
 </div>
 
